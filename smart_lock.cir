@@ -1,0 +1,22 @@
+* /home/bhawarth/eSim-Workspace/smart_lock/smart_lock.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Sat Mar  5 20:18:33 2022
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U4  clk reset Din Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ adc_bridge_3		
+U5  Net-_U1-Pad4_ out dac_bridge_1		
+v1  Net-_R1-Pad1_ GND pulse		
+v2  reset GND pulse		
+R1  Net-_R1-Pad1_ clk 1k		
+R2  clk GND 1k		
+U2  clk plot_v1		
+U6  out plot_v1		
+U3  reset plot_v1		
+U7  Din plot_v1		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ fsm_lock		
+v3  Din GND pulse		
+
+.end
